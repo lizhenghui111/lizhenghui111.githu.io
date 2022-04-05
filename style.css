@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Verdana;
+  background: #666666;
+  background-image: url(https://pic.52112.com/2019/08/14/JPG-190814_9/NkTwhy6Bfx_small.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  color: #EEEEEE;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label {
+  width: 23%;
+  float: left;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #222222;
+  padding: 0.5%;
+  margin: 0.5%;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+input[type=radio][id=men]:checked + label {
+  background: #6666ff;
+}
+input[type=radio][id=men]:checked ~ .women,
+input[type=radio][id=men]:checked ~ .children {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+input[type=radio][id=women]:checked + label {
+  background: #ff4466;
+}
+input[type=radio][id=women]:checked ~ .men,
+input[type=radio][id=women]:checked ~ .children {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+input[type=radio][id=children]:checked + label {
+  background: #66dd99;
+}
+input[type=radio][id=children]:checked ~ .men,
+input[type=radio][id=children]:checked ~ .women {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+.tile {
+  width: 23%;
+  float: left;
+  transition: all 1s;
+  margin: 0.5%;
+  padding: 0.5%;
+  background: #555555;
+}
+.tile img {
+  width: 100%;
+}
+
+input[type=radio][id=m]:checked + label {
+  background: #6666ff;
+}
+input[type=radio][id=m]:checked ~ .w,
+input[type=radio][id=m]:checked ~ .c {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+input[type=radio][id=w]:checked + label {
+  background: #ff4466;
+}
+input[type=radio][id=w]:checked ~ .m,
+input[type=radio][id=w]:checked ~ .c {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+input[type=radio][id=c]:checked + label {
+  background: #66dd99;
+}
+input[type=radio][id=c]:checked ~ .m,
+input[type=radio][id=c]:checked ~ .w {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+input[type=radio][id=a]:checked + label {
+  background: #6666ff;
+}
+input[type=radio][id=a]:checked ~ .b,
+input[type=radio][id=a]:checked ~ .d {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+input[type=radio][id=b]:checked + label {
+  background: #ff4466;
+}
+input[type=radio][id=b]:checked ~ .a,
+input[type=radio][id=b]:checked ~ .d {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+input[type=radio][id=d]:checked + label {
+  background: #66dd99;
+}
+input[type=radio][id=d]:checked ~ .a,
+input[type=radio][id=d]:checked ~ .b {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
